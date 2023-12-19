@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+#myimg{
+    border-radius: 50%;
+}
+
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+
+
+#navbar{
+   
+    
+    display: flex;
+    align-items: center;
+    position: sticky;
+    justify-content: space-between;
+    top:0;
+}
+
+#logo img{
+    height:70px;
+    margin:3px 6px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family:'Baloo bhai', cursive;
+}
+
+
+#navbar ul li{
+list-style: none;
+font-size: 1.3rem;
+
+}
+
+#navbar ul li a{
+    color:white;
+   display: block;
+   padding:3px 20px;
+   border-radius: 20px;
+   text-decoration: none;
+    
+    }
+
+    #navbar ul li a:hover{
+        background-color: white;
+        color: black;
+    } 
+
+    #home{
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        height: 550px;
+        justify-content: center;
+        align-items: center;
+
+    }   
+    
+    #home::before{
+        content: "";
+        position: absolute;
+        background-image:url('../images/icemain.jpg') ;
+        background-position: center;
+        background-size: cover;
+        height:100%;
+        width:100%;
+        z-index: -1;
+        opacity: 0.90;
+        margin-bottom:20%;
+    }
+
+    .h-primeary{
+        font-size: 3.8rem;
+        padding: 12px;
+    }
+
+
+    .h-primary:hover{
+        font-size: 4.2rem;
+
+    }
+
+
+
+    .h-secondary{
+        font-size: 2.2rem;
+        padding: 6px 10px;
+    }
+    .h-primary{
+        font-size: 3.5rem;
+        padding: 6px 12;
+        text-align: center;
+        margin-top: 2%;
+    }
+    
+    
+
+
+    #home h1{
+        color:white;
+        text-align: center;
+      
+
+    }
+
+    #home p{
+        color:white;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family:a;
+    }
+
+    .btn{
+        padding: 10px 20px;
+        border:2px solid white;
+        background-color: brown;
+        color: white;
+        margin:17px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+       cursor: pointer;
+    }
+
+    .btn:hover{
+        font-size:1.8rem ;
+        background-color: rgb(142, 95, 95);
+    }
+
+.center{
+    align-items: center;
+}
+.center{
+    text-align: center;
+}
+
+#services{
+    display: flex;
+    margin: 34px;
+}
+
+#services .box{
+border:2px solid brown;
+padding:34px;
+margin: 2px 20px;
+border-radius: 20px;
+background-color: bisque;
+margin-bottom: 20px;
+}
+
+#services .box:hover{
+    padding:40px ;
+    margin:4px 30px ;
+    background-color: rgb(242, 234, 220);
+
+}
+
+
+
+
+
+#services .box img{
+    height:160px;
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+    width:190px;
+
+}
+
+#services .box img:hover{
+    height: 180px;
+}
+#chient-section{
+
+    position: relative;
+}
+
+#chient-section::before{
+ content: "";
+ position: absolute;
+background-color: rgb(217, 216, 216);
+ background-size: cover;
+ width:100%;
+ height:100%;
+ z-index: -1;
+ opacity: 0.6;
+margin-bottom: 10%;
+
+}
+
+
+
+
+.purchase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-items{
+    padding: 20px;
+}
+
+.purchase img{
+    height:160px;
+    margin: 1px 24px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin-bottom: 8%;
+}
+.purchase img:hover{
+    margin: 4px 30px;
+}
+
+
+
+.purchase-items{
+    margin-top: 5%;
+}
+
+
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-image:url('/images/conpic.webp');
+    background-size: cover;
+    background-position: center;
+
+}
+
+footer{
+    background-color: rgb(65, 60, 60);
+    color: white;
+    padding: 9px 20px;
+    height: 50px;
+}
+
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px ;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+#contact-box form{
+    width:60%;
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+}
+
+
